@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-banpakupakuapp-dev-21605-authRole",
+      "UnauthRoleArn": "arn:aws:iam::377076003539:role/amplify-banpakupakuapp-dev-21605-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::377076003539:role/amplify-banpakupakuapp-dev-21605-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-banpakupakuapp-dev-21605-deployment",
+      "UnauthRoleName": "amplify-banpakupakuapp-dev-21605-unauthRole",
+      "StackName": "amplify-banpakupakuapp-dev-21605",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:377076003539:stack/amplify-banpakupakuapp-dev-21605/d9538dd0-753a-11f0-a41a-06cf1c471ac1",
+      "AmplifyAppId": "d28ih72wij22t7"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d28ih72wij22t7",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "banpakupakuapp": {}
+      }
+    }
+  }
+}

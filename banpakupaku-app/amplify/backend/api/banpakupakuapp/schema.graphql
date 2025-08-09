@@ -1,0 +1,7 @@
+type Itinerary @model @auth(rules: [{ allow: public, operations: [read] }]) {
+  id: ID!
+  startTime: String!
+  title: String!
+  description: String
+  points: String
+}
