@@ -1,4 +1,4 @@
-type Itinerary @model @auth(rules: [{ allow: public, operations: [read] }]) {
+type Itinerary @model @auth(rules: [{ allow: public }]) {
   id: ID!
   startTime: String!
   title: String!
