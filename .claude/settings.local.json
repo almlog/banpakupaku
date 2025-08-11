@@ -15,7 +15,8 @@
       "Bash(set PORT=3001)",
       "Bash(taskkill:*)",
       "Bash(npx kill-port:*)",
-      "Bash(amplify push:*)"
+      "Bash(amplify push:*)",
+      "Bash(amplify publish:*)"
     ],
     "deny": []
   }
