@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LocationTracker.css';
 
 export const LocationTracker: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <div className="location-tracker">
-      <div className="location-header">
+      <div 
+        className="location-header clickable" 
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
         <h2>📍 リアルタイム位置確認</h2>
         <p>旅行者の現在地をGoogle Mapでリアルタイム確認</p>
+        <div className={`expand-icon ${isExpanded ? 'expanded' : ''}`}>
+          ▼
+        </div>
       </div>
 
-      <div className="location-simple">
+      <div className={`location-content ${isExpanded ? 'expanded' : 'collapsed'}`}>
+        <div className="location-simple">
         <div className="setup-instructions">
           <h3>📱 事前準備（旅行前に設定）</h3>
           <ol>
@@ -40,6 +49,7 @@ export const LocationTracker: React.FC = () => {
             <br />• 共有されている場合、Google Mapのサイドバーに旅行者の名前と位置が表示されます
             <br />• スマホの場合はGoogle Mapアプリから確認するのがおすすめです
           </div>
+        </div>
         </div>
       </div>
     </div>

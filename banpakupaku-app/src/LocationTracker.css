@@ -10,6 +10,18 @@
 .location-header {
   text-align: center;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.location-header.clickable {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.location-header.clickable:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .location-header h2 {
@@ -21,6 +33,37 @@
 .location-header p {
   opacity: 0.9;
   font-size: 1.1em;
+}
+
+.expand-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.expand-icon.expanded {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.location-content {
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.location-content.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin-bottom: 0;
+}
+
+.location-content.expanded {
+  max-height: 1000px;
+  opacity: 1;
+  margin-bottom: 20px;
 }
 
 .location-simple {
@@ -136,6 +179,15 @@
   .location-tracker {
     margin: 15px;
     padding: 20px;
+  }
+  
+  .location-header.clickable {
+    padding: 10px;
+  }
+  
+  .expand-icon {
+    right: 10px;
+    font-size: 1em;
   }
   
   .map-buttons {
