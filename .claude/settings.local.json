@@ -16,7 +16,10 @@
       "Bash(taskkill:*)",
       "Bash(npx kill-port:*)",
       "Bash(amplify push:*)",
-      "Bash(amplify publish:*)"
+      "Bash(amplify publish:*)",
+      "Bash(npx amplify:*)",
+      "WebFetch(domain:dev.d28ih72wij22t7.amplifyapp.com)",
+      "WebFetch(domain:www3.nhk.or.jp)"
     ],
     "deny": []
   }
